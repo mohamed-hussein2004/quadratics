@@ -12,7 +12,8 @@ public class Main {
         b=3;
         c=1;
         //todo calculations
-        
+        axisOFSymmentry = (-b/2*a);
+        discriminant = (b*b)-4*(a*c);
         //todo print results
 
         //todo not in code check results
