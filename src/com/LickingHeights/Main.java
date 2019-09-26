@@ -5,16 +5,25 @@ public class Main {
     public static void main(String[] args) {
 
         //todo declare variable a,b,c, discriminant ,axisOFSymmetry. parabolaFacing x,y
-        double a,b,c,discriminant,axisOFSymmetry,x,y;
+        double a, b, c, discriminant, axisOFSymmetry, x, y;
         String parabolaFacing;
         //todo initialize manually
-        a=5;
-        b=3;
-        c=1;
+        a = 5;
+        b = 3;
+        c = 1;
         //todo calculations
-        axisOFSymmetry = -b/(2*a);
-        discriminant = (b*b)-4*(a*c);
-        //todo print results
+        axisOFSymmetry = -b / (2 * a);
+        discriminant = (b * b) - 4 * (a * c);
+        if (discriminant > 0) {
+            System.out.println("There are two real solutions");
+        }
+                else if(discriminant == 0){
+                System.out.println("There are one real solutions");
+            }
+            else{
+                System.out.println("There are NO real solutions");
+            }
+;        //todo print results
         System.out.println("Axis of Symmetry: "+ axisOFSymmetry);
         System.out.println("Discriminant: "+ discriminant);
         //todo not in code check results
